@@ -1,0 +1,75 @@
+{
+  "best_model": "RandomForest",
+  "test_metrics": {
+    "accuracy": 0.7338,
+    "precision": 0.5915,
+    "recall": 0.7778,
+    "f1": 0.672,
+    "roc_auc": 0.8152
+  },
+  "cv_results": {
+    "LogisticRegression": {
+      "cv_roc_auc": 0.845,
+      "cv_accuracy": 0.7671,
+      "cv_f1": 0.6823,
+      "cv_recall": 0.7198,
+      "best_params": {
+        "C": 0.1
+      }
+    },
+    "RandomForest": {
+      "cv_roc_auc": 0.8402,
+      "cv_accuracy": 0.7704,
+      "cv_f1": 0.7022,
+      "cv_recall": 0.7757,
+      "best_params": {
+        "max_depth": 4,
+        "min_samples_leaf": 5,
+        "n_estimators": 200
+      }
+    },
+    "GradientBoosting": {
+      "cv_roc_auc": 0.8298,
+      "cv_accuracy": 0.7703,
+      "cv_f1": 0.6369,
+      "cv_recall": 0.5795,
+      "best_params": {
+        "learning_rate": 0.05,
+        "max_depth": 2,
+        "n_estimators": 100
+      }
+    },
+    "SVM": {
+      "cv_roc_auc": 0.8493,
+      "cv_accuracy": 0.7801,
+      "cv_f1": 0.653,
+      "cv_recall": 0.5935,
+      "best_params": {
+        "C": 1,
+        "gamma": 0.01
+      }
+    },
+    "KNN": {
+      "cv_roc_auc": 0.8337,
+      "cv_accuracy": 0.7524,
+      "cv_f1": 0.594,
+      "cv_recall": 0.519,
+      "best_params": {
+        "n_neighbors": 21,
+        "weights": "distance"
+      }
+    }
+  },
+  "features": [
+    "Pregnancies",
+    "Glucose",
+    "BloodPressure",
+    "SkinThickness",
+    "Insulin",
+    "BMI",
+    "DiabetesPedigreeFunction",
+    "Age"
+  ],
+  "n_rows": 768,
+  "sklearn_version": "1.9.1"
+}
