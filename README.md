@@ -80,3 +80,9 @@ models/                  trained model, metrics.json, evaluation.png (created by
 | BMI | Body mass index |
 | DiabetesPedigreeFunction | Family-history score |
 | Age | Years |
+
+## License
+
+The code is released under the [MIT License](LICENSE). The dataset is the Pima Indians
+Diabetes Database, originally from the National Institute of Diabetes and Digestive and
+Kidney Diseases (via the UCI Machine Learning Repository), and is not covered by this license.
